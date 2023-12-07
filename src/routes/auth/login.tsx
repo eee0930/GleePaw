@@ -11,6 +11,7 @@ import {
   Wrapper,
   Form,
 } from '../../assets/authStyles';
+import GithubButton from '../../components/githubBtn';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -75,6 +76,7 @@ export default function Login() {
         Don't have an account?{' '}
         <Link to="/auth/create-account">Create One &rarr;</Link>
       </Switcher>
+      <GithubButton />
     </Wrapper>
   );
 }

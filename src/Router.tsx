@@ -1,11 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
+import ProtectedRoute from './components/protectedRoute';
 import Layout from './components/layout/layout';
 import AuthLayout from './components/layout/authLayout';
 import Home from './routes/home';
 import Profile from './routes/profile';
 import Login from './routes/auth/login';
 import CreateAccount from './routes/auth/createAccount';
-import ProtectedRoute from './components/protectedRoute';
 
 export const router = createBrowserRouter([
   {

@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #000;
     font-family: 'Poppins', -apple-system, 'Nanum Square', BlinkMacSystemFont, "Segoe UI", 
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: -0.015em;
   }
 `;
 

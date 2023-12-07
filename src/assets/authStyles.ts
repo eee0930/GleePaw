@@ -5,15 +5,21 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 420px;
+  margin-top: 3rem;
+  width: calc(100% - 20px);
   padding: 50xp 0px;
+  @media (min-width: 768px) {
+    margin-top: -30px;
+    width: 420px;
+    justify-content: center;
+  }
 `;
 export const Title = styled.h1`
-  font-size: 42px;
+  font-size: 30px;
+  color: #31725c;
 `;
 export const Form = styled.form`
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -22,13 +28,17 @@ export const Form = styled.form`
 export const Input = styled.input`
   padding: 10px 20px;
   border-radius: 50px;
-  border: none;
+  border: solid 2px #31725c;
   width: 100%;
   font-size: 16px;
-  &[type="submit] {
+  &[type='submit'] {
     cursor: pointer;
+    background-color: #31725c;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
     &:hover {
-      opacity: 0.8;
+      background-color: #59a98e;
+      border-color: #59a98e;
     }
   }
 `;
@@ -37,8 +47,8 @@ export const Error = styled.span`
   color: tomato;
 `;
 export const Switcher = styled.span`
-  margin-top: 20px;
+  margin-top: 30px;
   a {
-    color: #1d9bf0;
+    color: #31725c;
   }
 `;
