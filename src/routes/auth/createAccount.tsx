@@ -11,7 +11,8 @@ import {
   Error,
   Wrapper,
 } from '../../assets/authStyles';
-import GithubButton from '../../components/githubBtn';
+import GithubButton from '../../components/auth/githubBtn';
+import GoogleButton from '../../components/auth/googleBtn';
 
 export default function CreateAccount() {
   const navigate = useNavigate();
@@ -97,6 +98,7 @@ export default function CreateAccount() {
         Already have an account? <Link to="/auth/login">Log in &rarr;</Link>
       </Switcher>
       <GithubButton />
+      <GoogleButton />
     </Wrapper>
   );
 }
