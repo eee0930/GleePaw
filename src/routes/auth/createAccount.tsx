@@ -10,7 +10,7 @@ import {
   Title,
   Error,
   Wrapper,
-} from '../../assets/authStyles';
+} from '../../assets/styles/authStyles';
 import GithubButton from '../../components/auth/githubBtn';
 import GoogleButton from '../../components/auth/googleBtn';
 
